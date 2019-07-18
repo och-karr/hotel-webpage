@@ -14,36 +14,68 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="nav-logo">
-            <div class="logo-stars">
-                <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
-                <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
-                <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
-                <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <div class="logo-stars">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
+                </div>
+                <div class="logo-main">
+                    <img src="./images/icons/Inteligentny_obiekt_wektorowy@2x.png" alt="hotel logo"
+                        class="logo-main-img">
+                </div>
             </div>
-            <div class="logo-main">
-                <img src="./images/icons/Inteligentny_obiekt_wektorowy@2x.png" alt="hotel logo" class="logo-main-img">
-            </div>
+            <ul class="nav-list nav-list-1">
+                <li class="nav-list-el"><a>Hotel</a></li>
+                <li class="nav-list-el"><a>Pokoje</a></li>
+                <li class="nav-list-el"><a>Restauracje</a></li>
+            </ul>
+            <ul class="nav-list nav-list-2">
+                <li class="nav-list-el"><a>Rezerwacje</a></li>
+                <li class="nav-list-el"><a>Kontakt</a></li>
+                <li class="nav-list-el nav-media">
+                    <img src="./images/icons/fb.svg" alt="fb-icon" class="nav-icon-img">
+                    <img src="./images/icons/insta.svg" alt="insta-icon" class="nav-icon-img">
+                </li>
+            </ul>
+        </nav>
+        <div class="header-container">
+            <h1 class="header-title">Zapewniamy komfort</br>i cudowne widoki</h1>
+            <button class="main-button">Sprawdź ofertę</button>
+            <form action="" class="header-form">
+                <h3 class="header-title">Zarezerwuj swój pobyt</h3>
+                <div class="form-group">
+                    <input type="date" class="form-input form-date">
+                    <input type="date" class="form-input form-date">
+                </div>
+                <div class="form-group">
+                    <select class="form-input form-select">
+                        <option class="form-select-opt" value="0">Dorośli</option>
+                        <option class="form-select-opt" value="1">1</option>
+                        <option class="form-select-opt" value="2">2</option>
+                        <option class="form-select-opt" value="3">3</option>
+                    </select>
+                    <select class="form-input form-select">
+                        <option class="form-select-opt" value="0">Dzieci</option>
+                        <option class="form-select-opt" value="1">1</option>
+                        <option class="form-select-opt" value="2">2</option>
+                        <option class="form-select-opt" value="3">3</option>
+                    </select>
+                </div>
+                <button class="form-submit main-button" type="submit">
+                    <img src="./images/icons/bell.png" alt="bell icon" class="submit-bell">
+                    Sprawdź</br> dostępność
+                </button>
         </div>
-        <ul class="nav-list nav-list-1">
-            <li class="nav-list-el"><a>Hotel</a></li>
-            <li class="nav-list-el"><a>Pokoje</a></li>
-            <li class="nav-list-el"><a>Restauracje</a></li>
-        </ul>
-        <ul class="nav-list nav-list-2">
-            <li class="nav-list-el"><a>Rezerwacje</a></li>
-            <li class="nav-list-el"><a>Kontakt</a></li>
-            <li class="nav-list-el nav-media">
-                <img src="./images/icons/fb.svg" alt="fb-icon" class="nav-icon-img">
-                <img src="./images/icons/insta.svg" alt="insta-icon" class="nav-icon-img">
-            </li>
-        </ul>
 
-    </nav>
-    <!-- <h1>Zapewniamy komfort i cudowne widoki</h1>
-    <h3>Zarezerwuj swój pobyt</h3>
-    <h2>NASZ HOTEL</h2>
+        </form>
+        </div>
+    </header>
+
+    <!-- <h2>NASZ HOTEL</h2>
     <p class="basic-text">Hotel został wybudowany w 2015 roku na obrzeżach nadmorskiego kurortu Pogorzelica,
          w cichej i spokojnej okolicy. Hotel znajduje się na wschód od miasta, zaledwie 300 metrów
          od plaży. Otoczony zielenią, drzewami teren jest zagrodzony i strzeżony, dlatego nasi

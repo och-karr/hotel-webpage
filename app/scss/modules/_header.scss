@@ -1,0 +1,59 @@
+.header {
+  background-image: url(../images/photos/header.png);
+  height: auto;
+  background-position:bottom;
+  background-size: cover;
+
+  &-title {
+    padding: 10px 0;
+  }
+
+  &-container {
+    width: 60%;
+    height: calc(100% - 112px); //nav height
+    margin: 0 auto;
+    background-color: $transparent-header-color;
+    padding: 143px 33px 29px 33px;
+    text-align: center;
+
+    .main-button {
+      margin: 54px 0;
+    }
+
+    .header-form {
+      padding: 0 57px 30px 57px;
+      border: 5px solid $white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        width: 251px;
+
+        @media #{$max1400} {
+          width: 50%;
+          padding-bottom: 20px;
+        }
+        .form-input {
+          margin-right: 23px;
+
+          &:first-of-type {
+            margin-bottom: 23px;
+          }
+        }
+      }
+
+      .form-submit {
+        margin: 0 auto;
+
+        .submit-bell {
+          height: 33px;
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
