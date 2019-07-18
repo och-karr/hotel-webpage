@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: $white;
+}
+
 body {
     min-width: 360px;
+    // max-width: 1920px;
+    // max-width: 1477px;
 }
 
 ul {

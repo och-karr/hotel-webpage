@@ -1,3 +1,117 @@
 .nav {
-  height: 150px;
+  height: 112px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 8%;
+  border-top: 7px solid $border-color;
+
+  @media #{$max1400} {
+    padding: 0 30px;
+  }
+
+  @media #{$max575} {
+    padding: 0;
+    display: block;
+  }
+
+  &-list {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    @media #{$max575} {
+      padding: 0;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &-el {
+      @extend .distinct-text;
+      @extend .normal-text;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media #{$max575} {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0 15px;
+        height: 50px;
+        border-bottom: 1px solid $border-color;
+      }
+    }
+
+    .nav-media {
+      .nav-icon-img {
+        display: inline-block;
+        height: 24px;
+
+        &:first-of-type {
+          padding: 0 10px 0 0;
+        }
+        &:last-of-type {
+          padding: 0 30px 0 10px;
+        }
+
+        @media #{$max575} {
+          height: 32px;
+        }
+      }
+    }
+  }
+
+  &-list-1 {
+    padding-right: 238px;
+    @media #{$max575} {
+      padding: 0;
+    }
+  }
+
+  &-list-2 {
+    padding-left: 238px;
+    @media #{$max575} {
+      padding: 0;
+    }
+  }
+
+  &-logo {
+    display: inline-block;
+    position: absolute;
+    top: -7px;
+    left: calc(50% - 178px);
+    width: 357px;
+    height: 178px;
+    background-color: $main-color;
+    border: 7px solid $white;
+    border-top: none;
+
+    @media #{$max575} {
+      border: none;
+      width: 100%;
+      position: static;
+    }
+
+    .logo-stars {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 22px 0 16px;
+      .logo-star {
+        height: 30px;
+        padding: 0 7px;
+      }
+    }
+
+    .logo-main {
+      text-align: center;
+      &-img {
+        width: 206px;
+        display: inline-block;
+      }
+    }
+  }
 }

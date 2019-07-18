@@ -8,6 +8,9 @@ Imports all project style components.
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  background-color: #fff; }
+
 body {
   min-width: 360px; }
 
@@ -18,49 +21,50 @@ a {
   text-decoration: none; }
 
 h1 {
-  font-size: 72px;
+  font-size: 54px;
   font-weight: 400;
-  line-height: 90px; }
+  line-height: 68px; }
 
 h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 400;
   text-transform: uppercase; }
 
 h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 48px;
-  font-weight: 300;
-  line-height: 36px; }
-
-h4 {
-  font-family: "Open Sans", sans-serif;
   font-size: 36px;
-  font-weight: 400;
-  line-height: 90px; }
-
-.basic-text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
   font-weight: 300;
   line-height: 27px; }
 
-.distinct-text {
+h4 {
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 68px; }
+
+.basic-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 36px; }
+  line-height: 20px; }
+
+.distinct-text, .nav-list-el {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  color: #003f8c; }
 
 .btn-text {
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400; }
 
 .light-text {
   font-weight: 300; }
 
-.normal-text {
+.normal-text, .nav-list-el {
   font-weight: 400; }
 
 .fat-text {
@@ -76,4 +80,87 @@ h4 {
   background-color: #ffb01e; }
 
 .nav {
-  height: 150px; }
+  height: 112px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 8%;
+  border-top: 7px solid #d5d5d5; }
+  @media all and (max-width: 1400px) {
+    .nav {
+      padding: 0 30px; } }
+  @media all and (max-width: 575px) {
+    .nav {
+      padding: 0;
+      display: block; } }
+  .nav-list {
+    width: 50%;
+    display: flex;
+    justify-content: space-between; }
+    @media all and (max-width: 575px) {
+      .nav-list {
+        padding: 0;
+        width: 100%;
+        flex-wrap: wrap; } }
+    .nav-list-el {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      @media all and (max-width: 575px) {
+        .nav-list-el {
+          width: 100%;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          padding: 0 15px;
+          height: 50px;
+          border-bottom: 1px solid #d5d5d5; } }
+    .nav-list .nav-media .nav-icon-img {
+      display: inline-block;
+      height: 24px; }
+      .nav-list .nav-media .nav-icon-img:first-of-type {
+        padding: 0 10px 0 0; }
+      .nav-list .nav-media .nav-icon-img:last-of-type {
+        padding: 0 30px 0 10px; }
+      @media all and (max-width: 575px) {
+        .nav-list .nav-media .nav-icon-img {
+          height: 32px; } }
+  .nav-list-1 {
+    padding-right: 238px; }
+    @media all and (max-width: 575px) {
+      .nav-list-1 {
+        padding: 0; } }
+  .nav-list-2 {
+    padding-left: 238px; }
+    @media all and (max-width: 575px) {
+      .nav-list-2 {
+        padding: 0; } }
+  .nav-logo {
+    display: inline-block;
+    position: absolute;
+    top: -7px;
+    left: calc(50% - 178px);
+    width: 357px;
+    height: 178px;
+    background-color: #003f8c;
+    border: 7px solid #fff;
+    border-top: none; }
+    @media all and (max-width: 575px) {
+      .nav-logo {
+        border: none;
+        width: 100%;
+        position: static; } }
+    .nav-logo .logo-stars {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 22px 0 16px; }
+      .nav-logo .logo-stars .logo-star {
+        height: 30px;
+        padding: 0 7px; }
+    .nav-logo .logo-main {
+      text-align: center; }
+      .nav-logo .logo-main-img {
+        width: 206px;
+        display: inline-block; }
