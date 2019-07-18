@@ -1,0 +1,113 @@
+.rooms {
+  position: relative;
+  width: 100%;
+  padding: 55px 185px;
+
+  @media #{$max575} {
+    padding: 0;
+  }
+
+  &-title {
+    &:nth-of-type(odd) {
+      text-align: right;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 1000px;
+        height: 1px;
+        background-color: $main-color;
+        top: 22px;
+        right: 160px;
+      }
+    }
+  }
+
+  .title-stars {
+    &:nth-of-type(odd) {
+      text-align: right;
+    }
+    .title-star {
+      width: 22px;
+      margin-left: 8px;
+    }
+  }
+
+  .distinct-text {
+    background-color: $main-color;
+    color: $white;
+    padding: 30px 50px 30px 185px;
+    width: 57%;
+    // height: 159px;
+
+    @media #{$max575} {
+      width: 100%;
+      padding: 30px 15px;
+    }
+  }
+
+  .text-1 {
+    position: absolute;
+    top: 36px;
+    left: 0;
+  }
+
+  .room {
+    display: flex;
+    width: 100%;
+    
+    .room-img {
+      width: 57%;
+      padding-top: 32px;
+      object-fit: contain;
+
+      @media #{$max1400} {
+        padding-top: 70px;
+        object-fit: cover;
+      }
+
+      @media #{$max575} {
+
+      }
+    }
+
+    .room-desc {
+      display: inline-block;
+      position: relative;
+      width: 42%;
+      padding: 104px 0 166px 90px;
+
+      @media #{$max1400} {
+        padding-left:60px;
+      }
+
+      .room-name {
+        padding-bottom: 27px;
+      }
+
+      .room-icons {
+        padding-top: 26px;
+        .room-icon {
+          height: 38px;
+          padding-right: 53px;
+
+          @media #{$max1400} {
+            padding-right: 20px;
+          }
+        }
+      }
+      .add-text {
+        position: absolute;
+        bottom: 0;
+        right: 92px;
+        color: $white;
+        padding: 45px 0;
+        text-align: center;
+        width: 120%;
+        background-color: $transparent-main-color;
+      }
+    }
+  }
+}

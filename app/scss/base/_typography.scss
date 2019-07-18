@@ -9,7 +9,6 @@ h1 {
     font-size: 36px;
     line-height: 40px;
   }
-  
 }
 
 h2 {
@@ -17,10 +16,18 @@ h2 {
   font-size: 36px;
   font-weight: 400;
   text-transform: uppercase;
+  color: $main-color;
 }
 
-
 h3 {
+  font-family: $main-font;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 27px;
+  color: $main-color;
+}
+
+h4 {
   font-family: $main-font;
   font-size: 26px;
   font-weight: 400;
@@ -42,12 +49,7 @@ h3 {
 //   line-height: 90px;
 // }
 
-h4 {
-  font-family: $main-font;
-  font-size: 27px;
-  font-weight: 400;
-  line-height: 68px;
-}
+
 
 // .basic-text {
 //   font-family: $main-font;
@@ -61,6 +63,7 @@ h4 {
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
+  text-align: justify;
 }
 
 // .distinct-text {
@@ -76,6 +79,20 @@ h4 {
   font-weight: 300;
   line-height: 27px;
   color: $main-color;
+  text-align: justify;
+}
+
+.name-text {
+  font-family: $main-font;
+  color: $distinct-color;
+  font-weight: 500;
+}
+
+.add-text {
+  font-family: $main-font;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 // .btn-text {
