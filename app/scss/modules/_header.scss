@@ -16,8 +16,17 @@
     padding: 143px 33px 29px 33px;
     text-align: center;
 
+    @media #{$max575} {
+      width: 100%;
+      margin-top: 373px;
+      padding: 15px;
+    }
+
     .main-button {
       margin: 54px 0;
+      @media #{$max575} {
+        margin: 20px 0;
+      }
     }
 
     .header-form {
@@ -26,6 +35,10 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+
+      @media #{$max575} {
+        padding: 0 15px 15px 15px;
+      }
 
       .form-group {
         display: flex;

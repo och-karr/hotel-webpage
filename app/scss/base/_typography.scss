@@ -4,6 +4,12 @@ h1 {
   line-height: 68px;
   color: $white;
   text-align: center;
+
+  @media #{$max575} {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  
 }
 
 h2 {
@@ -22,6 +28,11 @@ h3 {
   color: $white;
   text-align: left;
   width: 100%;
+
+  @media #{$max575} {
+    font-size: 18px;
+    line-height: 36px;
+  }
 }
 
 // h4 {
