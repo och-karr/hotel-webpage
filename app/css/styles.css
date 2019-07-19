@@ -211,6 +211,7 @@ h4 {
     padding: 10px 0; }
   .header-container {
     width: 60%;
+    max-width: 893px;
     height: calc(100% - 112px);
     margin: 0 auto;
     background-color: #002070de;
@@ -264,9 +265,18 @@ h4 {
   @media all and (max-width: 575px) {
     .rooms {
       padding: 0; } }
+  @media all and (max-width: 575px) {
+    .rooms-title-space {
+      display: none; } }
+  @media all and (max-width: 575px) {
+    .rooms-title {
+      padding-top: 10px; } }
   .rooms-title:nth-of-type(odd) {
     text-align: right;
     position: relative; }
+    @media all and (max-width: 575px) {
+      .rooms-title:nth-of-type(odd) {
+        padding-right: 15px; } }
     .rooms-title:nth-of-type(odd):before {
       content: "";
       position: absolute;
@@ -276,27 +286,40 @@ h4 {
       background-color: #003f8c;
       top: 22px;
       right: 160px; }
+      @media all and (max-width: 575px) {
+        .rooms-title:nth-of-type(odd):before {
+          width: 500px;
+          top: 30px;
+          right: 270px; } }
   .rooms .title-stars:nth-of-type(odd) {
     text-align: right; }
+    @media all and (max-width: 575px) {
+      .rooms .title-stars:nth-of-type(odd) {
+        padding-right: 15px;
+        padding-bottom: 10px; } }
   .rooms .title-stars .title-star {
     width: 22px;
     margin-left: 8px; }
   .rooms .distinct-text, .rooms .nav-list-el {
+    position: absolute;
+    top: 36px;
+    left: 0;
     background-color: #003f8c;
     color: #fff;
     padding: 30px 50px 30px 185px;
     width: 57%; }
     @media all and (max-width: 575px) {
       .rooms .distinct-text, .rooms .nav-list-el {
+        position: static;
         width: 100%;
         padding: 30px 15px; } }
-  .rooms .text-1 {
-    position: absolute;
-    top: 36px;
-    left: 0; }
   .rooms .room {
     display: flex;
     width: 100%; }
+    @media all and (max-width: 575px) {
+      .rooms .room {
+        flex-wrap: wrap;
+        flex-direction: column-reverse; } }
     .rooms .room .room-img {
       width: 57%;
       padding-top: 32px;
@@ -305,6 +328,10 @@ h4 {
         .rooms .room .room-img {
           padding-top: 70px;
           object-fit: cover; } }
+      @media all and (max-width: 575px) {
+        .rooms .room .room-img {
+          width: 100%;
+          padding-top: 0; } }
     .rooms .room .room-desc {
       display: inline-block;
       position: relative;
@@ -313,6 +340,10 @@ h4 {
       @media all and (max-width: 1400px) {
         .rooms .room .room-desc {
           padding-left: 60px; } }
+      @media all and (max-width: 575px) {
+        .rooms .room .room-desc {
+          width: 100%;
+          padding: 30px 15px; } }
       .rooms .room .room-desc .room-name {
         padding-bottom: 27px; }
       .rooms .room .room-desc .room-icons {
@@ -332,3 +363,9 @@ h4 {
         text-align: center;
         width: 120%;
         background-color: #003f8ce8; }
+        @media all and (max-width: 575px) {
+          .rooms .room .room-desc .add-text {
+            position: static;
+            margin-top: 10px;
+            padding: 10px;
+            width: auto; } }

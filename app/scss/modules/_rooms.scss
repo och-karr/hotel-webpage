@@ -8,10 +8,25 @@
   }
 
   &-title {
+
+    &-space {
+      @media #{$max575} {
+        display: none;
+      }
+    }
+
+    @media #{$max575} {
+      padding-top: 10px;
+    }
+
     &:nth-of-type(odd) {
       text-align: right;
       position: relative;
 
+      @media #{$max575} {
+        padding-right: 15px;
+      }
+      
       &:before {
         content: "";
         position: absolute;
@@ -21,6 +36,12 @@
         background-color: $main-color;
         top: 22px;
         right: 160px;
+
+        @media #{$max575} {
+          width: 500px;
+          top: 30px;
+          right: 270px;
+        }
       }
     }
   }
@@ -28,6 +49,11 @@
   .title-stars {
     &:nth-of-type(odd) {
       text-align: right;
+
+      @media #{$max575} {
+        padding-right: 15px;
+        padding-bottom: 10px;
+      }
     }
     .title-star {
       width: 22px;
@@ -36,6 +62,9 @@
   }
 
   .distinct-text {
+    position: absolute;
+    top: 36px;
+    left: 0;
     background-color: $main-color;
     color: $white;
     padding: 30px 50px 30px 185px;
@@ -43,20 +72,20 @@
     // height: 159px;
 
     @media #{$max575} {
+      position: static;
       width: 100%;
       padding: 30px 15px;
     }
   }
 
-  .text-1 {
-    position: absolute;
-    top: 36px;
-    left: 0;
-  }
-
   .room {
     display: flex;
     width: 100%;
+
+    @media #{$max575} {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
     
     .room-img {
       width: 57%;
@@ -69,7 +98,8 @@
       }
 
       @media #{$max575} {
-
+        width: 100%;
+        padding-top: 0;
       }
     }
 
@@ -81,6 +111,11 @@
 
       @media #{$max1400} {
         padding-left:60px;
+      }
+
+      @media #{$max575} {
+        width: 100%;
+        padding: 30px 15px;
       }
 
       .room-name {
@@ -107,6 +142,13 @@
         text-align: center;
         width: 120%;
         background-color: $transparent-main-color;
+
+        @media #{$max575} {
+          position: static;
+          margin-top: 10px;
+          padding: 10px;
+          width: auto;
+        }
       }
     }
   }
