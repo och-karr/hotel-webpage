@@ -25,6 +25,7 @@
 
     .main-button {
       margin: 54px 0;
+      @extend .btn-text;
       @media #{$max575} {
         margin: 20px 0;
       }

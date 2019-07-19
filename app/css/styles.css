@@ -84,7 +84,7 @@ h4 {
   font-weight: 500;
   line-height: 20px; }
 
-.btn-text {
+.btn-text, .header-container .main-button, .rooms .main-button {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 400; }
@@ -108,7 +108,9 @@ h4 {
   background-color: #ffb01e;
   padding: 14px 38px;
   border: none;
-  color: #fff; }
+  color: #fff;
+  cursor: pointer;
+  outline: none; }
 
 .form-input {
   height: 43px;
@@ -316,13 +318,9 @@ h4 {
   .rooms .room {
     display: flex;
     width: 100%; }
-    @media all and (max-width: 575px) {
-      .rooms .room {
-        flex-wrap: wrap;
-        flex-direction: column-reverse; } }
     .rooms .room .room-img {
       width: 57%;
-      padding-top: 32px;
+      padding-top: 2px;
       object-fit: contain; }
       @media all and (max-width: 1400px) {
         .rooms .room .room-img {
@@ -369,3 +367,27 @@ h4 {
             margin-top: 10px;
             padding: 10px;
             width: auto; } }
+    .rooms .room:first-of-type .room-img {
+      padding-top: 32px; }
+    .rooms .room:nth-of-type(odd) {
+      flex-direction: row-reverse; }
+      @media all and (max-width: 575px) {
+        .rooms .room:nth-of-type(odd) {
+          flex-direction: column-reverse; } }
+      .rooms .room:nth-of-type(odd) .room-desc {
+        padding: 104px 90px 166px 0; }
+        @media all and (max-width: 575px) {
+          .rooms .room:nth-of-type(odd) .room-desc {
+            width: 100%;
+            padding: 30px 15px; } }
+        .rooms .room:nth-of-type(odd) .room-desc .add-text {
+          left: 92px; }
+    @media all and (max-width: 575px) {
+      .rooms .room {
+        flex-wrap: wrap;
+        flex-direction: column-reverse; } }
+  .rooms .main-button {
+    margin: 38px auto;
+    padding: 23px 68px;
+    display: flex;
+    align-self: center; }
