@@ -1,23 +1,104 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    background-color: $white;
+  background-color: $white;
 }
 
 body {
-    min-width: 360px;
-    // max-width: 1920px;
-    // max-width: 1477px;
+  min-width: 360px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+  padding: 55px $main-section-space-lg;
+  position: relative;
+
+  @media #{$max575} {
+    padding: 0;
+  }
+
+  .section-title-container {
+    @media #{$max575} {
+      padding: 10px 15px;
+    }
+    .section-title {
+      position: relative;
+      display: inline;
+
+      &-space {
+        display: none;
+      }
+    }
+  }
+
+  &:nth-of-type(odd) {
+    .section-title-container {
+      text-align: left;
+      .section-title {
+        &:after {
+          @include line-title;
+          left: 110%;
+        }
+      }
+    }
+
+    .title-stars {
+      text-align: left;
+
+      .title-star {
+        margin-right: 8px;
+      }
+    }
+
+    .distinct-text {
+      @include section-text-box;
+      padding: 30px $main-section-space-lg 30px 50px;
+      right: 0;
+    }
+  }
+
+  &:nth-of-type(even) {
+    .section-title-container {
+      text-align: right;
+      .section-title {
+        &:before {
+          @include line-title;
+          right: 110%;
+        }
+      }
+    }
+
+    .title-stars {
+      text-align: right;
+
+      .title-star {
+        margin-left: 8px;
+      }
+    }
+
+    .distinct-text {
+      @include section-text-box;
+      padding: 30px 50px 30px $main-section-space-lg;
+      left: 0;
+    }
+  }
+  .title-stars {
+    .title-star {
+      width: 22px;
+    }
+  }
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }

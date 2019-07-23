@@ -1,0 +1,23 @@
+@mixin line-title {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1000px;
+  height: 1px;
+  background-color: $main-color;
+  top: 22px;
+}
+
+@mixin section-text-box {
+  position: absolute;
+  top: 36px;
+  background-color: $main-color;
+  color: $white;
+  width: 57%;
+
+  @media #{$max575} {
+    position: static;
+    width: 100%;
+    padding: $main-section-space-md $main-section-space-sm;
+  }
+}

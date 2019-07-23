@@ -42,22 +42,6 @@ h4 {
   }
 }
 
-// h4 {
-//   font-family: $main-font;
-//   font-size: 36px;
-//   font-weight: 400;
-//   line-height: 90px;
-// }
-
-
-
-// .basic-text {
-//   font-family: $main-font;
-//   font-size: 18px;
-//   font-weight: 300;
-//   line-height: 27px;
-// }
-
 .basic-text {
   font-family: $main-font;
   font-size: 14px;
@@ -65,13 +49,6 @@ h4 {
   line-height: 20px;
   text-align: justify;
 }
-
-// .distinct-text {
-//   font-family: $main-font;
-//   font-size: 24px;
-//   font-weight: 300;
-//   line-height: 36px;
-// }
 
 .distinct-text {
   font-family: $main-font;
@@ -101,22 +78,6 @@ h4 {
   font-weight: 400;
 }
 
-.light-text {
-  font-weight: 300;
-}
-
-.normal-text {
-  font-weight: 400;
-}
-
 .fat-text {
-  font-weight: 600;
-}
-
-.fatter-text {
-  font-weight: 600;
-}
-
-.fattest-text {
   font-weight: 700;
 }

@@ -1,86 +1,9 @@
 .rooms {
-  position: relative;
-  width: 100%;
-  padding: 55px 185px;
-
-  @media #{$max575} {
-    padding: 0;
-  }
-
-  &-title {
-    &-space {
-      @media #{$max575} {
-        display: none;
-      }
-    }
-
-    @media #{$max575} {
-      padding-top: 10px;
-    }
-
-    &:nth-of-type(odd) {
-      text-align: right;
-      position: relative;
-
-      @media #{$max575} {
-        padding-right: 15px;
-      }
-
-      &:before {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        width: 1000px;
-        height: 1px;
-        background-color: $main-color;
-        top: 22px;
-        right: 160px;
-
-        @media #{$max575} {
-          width: 500px;
-          top: 30px;
-          right: 270px;
-        }
-      }
-    }
-  }
-
-  .title-stars {
-    &:nth-of-type(odd) {
-      text-align: right;
-
-      @media #{$max575} {
-        padding-right: 15px;
-        padding-bottom: 10px;
-      }
-    }
-    .title-star {
-      width: 22px;
-      margin-left: 8px;
-    }
-  }
-
-  .distinct-text {
-    position: absolute;
-    top: 36px;
-    left: 0;
-    background-color: $main-color;
-    color: $white;
-    padding: 30px 50px 30px 185px;
-    width: 57%;
-    // height: 159px;
-
-    @media #{$max575} {
-      position: static;
-      width: 100%;
-      padding: 30px 15px;
-    }
-  }
 
   .room {
-    display: flex;
     width: 100%;
-
+    display: flex;
+    
     .room-img {
       width: 57%;
       padding-top: 2px;
@@ -98,10 +21,10 @@
     }
 
     .room-desc {
-      display: inline-block;
-      position: relative;
       width: 42%;
       padding: 104px 0 166px 90px;
+      display: inline-block;
+      position: relative;
 
       @media #{$max1400} {
         padding-left: 60px;
@@ -109,7 +32,7 @@
 
       @media #{$max575} {
         width: 100%;
-        padding: 30px 15px;
+        padding: $main-section-space-md $main-section-space-sm;
       }
 
       .room-name {
@@ -128,20 +51,20 @@
         }
       }
       .add-text {
+        width: 120%;
+        padding: 45px 0;
         position: absolute;
         bottom: 0;
         right: 92px;
-        color: $white;
-        padding: 45px 0;
         text-align: center;
-        width: 120%;
+        color: $white;
         background-color: $transparent-main-color;
 
         @media #{$max575} {
-          position: static;
+          width: auto;
           margin-top: 10px;
           padding: 10px;
-          width: auto;
+          position: static;
         }
       }
     }
@@ -164,7 +87,7 @@
 
         @media #{$max575} {
           width: 100%;
-          padding: 30px 15px;
+          padding: $main-section-space-md $main-section-space-sm;
         }
 
         .add-text {
@@ -185,6 +108,5 @@
     padding: 23px 68px;
     display: flex;
     align-self: center;
-    
   }
 }

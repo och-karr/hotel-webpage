@@ -14,45 +14,173 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <ul class="nav-list nav-list-1">
-            <li class="nav-list-el">Hotel</li>
-            <li class="nav-list-el">Pokoje</li>
-            <li class="nav-list-el">Restauracje</li>
-        </ul>
-        <ul class="nav-list nav-list-2">
-            <li class="nav-list-el">Rezerwacje</li>
-            <li class="nav-list-el">Kontakt</li>
-            <li class="nav-list-el nav-icon"></li>
-            <li class="nav-list-el nav-icon"></li>
-        </ul>
-        <div class="nav-logo">
-            <div class="logo-stars">
-                <img src="" alt="hotel rating star" class="logo-star">
-                <img src="" alt="hotel rating star" class="logo-star">
-                <img src="" alt="hotel rating star" class="logo-star">
-                <img src="" alt="hotel rating star" class="logo-star">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <div class="logo-stars">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
+                </div>
+                <div class="logo-main">
+                    <img src="./images/icons/title.png" alt="hotel logo" class="logo-main-img">
+                </div>
             </div>
-            <div class="logo-main">
-                
-            </div>
+            <ul class="nav-list nav-list-1">
+                <li class="nav-list-el"><a>Hotel</a></li>
+                <li class="nav-list-el"><a>Pokoje</a></li>
+                <li class="nav-list-el"><a>Restauracje</a></li>
+            </ul>
+            <ul class="nav-list nav-list-2">
+                <li class="nav-list-el"><a>Rezerwacje</a></li>
+                <li class="nav-list-el"><a>Kontakt</a></li>
+                <li class="nav-list-el nav-media">
+                    <img src="./images/icons/fb.svg" alt="fb-icon" class="nav-icon-img">
+                    <img src="./images/icons/insta.svg" alt="insta-icon" class="nav-icon-img">
+                </li>
+            </ul>
+        </nav>
+        <div class="header-container">
+            <h1 class="header-title">Zapewniamy komfort</br>i cudowne widoki</h1>
+            <button class="main-button">Sprawdź ofertę</button>
+            <form action="" class="header-form">
+                <h4 class="header-title">Zarezerwuj swój pobyt</h4>
+                <div class="form-group">
+                    <input id="start-date" type="date" class="form-input form-date">
+                    <input id="end-date" type="date" class="form-input form-date">
+                </div>
+                <div class="form-group">
+                    <select class="form-input form-select">
+                        <option class="form-select-opt" value="0">Dorośli</option>
+                        <option class="form-select-opt" value="1">1</option>
+                        <option class="form-select-opt" value="2">2</option>
+                        <option class="form-select-opt" value="3">3</option>
+                    </select>
+                    <select class="form-input form-select">
+                        <option class="form-select-opt" value="0">Dzieci</option>
+                        <option class="form-select-opt" value="1">1</option>
+                        <option class="form-select-opt" value="2">2</option>
+                        <option class="form-select-opt" value="3">3</option>
+                    </select>
+                </div>
+                <button class="form-submit main-button" type="submit">
+                    <img src="./images/icons/bell.png" alt="bell icon" id="submit-btn" class="submit-bell">
+                    Sprawdź</br> dostępność
+                </button>
+            </form>
         </div>
-    </nav>
-    <!-- <h1>Zapewniamy komfort i cudowne widoki</h1>
-    <h3>Zarezerwuj swój pobyt</h3>
-    <h2>NASZ HOTEL</h2>
-    <p class="basic-text">Hotel został wybudowany w 2015 roku na obrzeżach nadmorskiego kurortu Pogorzelica,
-         w cichej i spokojnej okolicy. Hotel znajduje się na wschód od miasta, zaledwie 300 metrów
-         od plaży. Otoczony zielenią, drzewami teren jest zagrodzony i strzeżony, dlatego nasi
-         goście mogą czuć się bezpiecznie.</p> 
-    <p class="basic-text">Na terenie Hotelu znajdują się dwa baseny - wewnętrzny i zewnętrzny - a także brodzik 
-        dla najmłodszych. W naszym nowoczesnym budynku znajduje się 120 pokoi różnych klas: 
-        pokoje Standard, Deluxe oraz Premium. </p>
-    <p class="basic-text">Istnieje możliwość zorganizowania imprez okolicznościowych takich jak przyjęcia, 
-        konferencje, bankiety czy wesela. Dodatkowo w hotelu organizowane są imprezy 
-        okolicznościowe i koncerty gwiazd polskiej muzyki rozrywkowej.</p> -->
+    </header>
 
+    <main class="main">
+        <section class="about">
+            <div class="section-title-container">
+                <h2 class="section-title">NASZ <br class="section-title-space" />HOTEL</h2>
+                <div class="title-stars">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                </div>
+            </div>
+            <p class="distinct-text intro-text">
+                Sprawdź unikalną ofertę naszych pokoi. Posiadamy 120 pokoi, w tym 30 klasy
+                <span class="fat-text">PREMIUM</span> o najwyższym standardzie, 40 pokoi
+                <span class="fat-text">DELUXE</span> oraz dodatkowo 50 pokoi
+                w klasie <span class="fat-text">STANDARD</span>. Zapraszamy do
+                zapoznania się ze szczegółowym opisem.
+            </p>
+        </section>
+        <section class="rooms">
+            <div class="section-title-container">
+                <h2 class="section-title">NASZE <br class="section-title-space" />POKOJE</h2>
+                <div class="title-stars">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                </div>
+            </div>
+            <p class="distinct-text intro-text">
+                Sprawdź unikalną ofertę naszych pokoi. Posiadamy 120 pokoi, w tym 30 klasy
+                <span class="fat-text">PREMIUM</span> o najwyższym standardzie, 40 pokoi
+                <span class="fat-text">DELUXE</span> oraz dodatkowo 50 pokoi
+                w klasie <span class="fat-text">STANDARD</span>. Zapraszamy do
+                zapoznania się ze szczegółowym opisem.
+            </p>
+            <div class="room">
+                <img src="./images/photos/rooms_1.png" alt="hotel room" class="room-img">
+                <div class="room-desc">
+                    <h3 class="room-name">Pokój <span class="name-text">STANDARD</span></h3>
+                    <p class="basic-text">
+                        Pokoje standardowe charakteryzują się przytulnym wnętrzem i nowoczesnym
+                        wykończeniem. Dostępne są wszystkie podstawowe udogodnienia, takie jak
+                        na przykład: łóżko dwuosobowe, szafa, telewizor, lodówka, dostęp do wi-fi.
+                    </p>
+                    <div class="room-icons">
+                        <img src="./images/icons/men.svg" alt="number of people" class="room-icon">
+                        <img src="./images/icons/tv.svg" alt="tv" class="room-icon">
+                        <img src="./images/icons/wifi.svg" alt="wifi" class="room-icon">
+                    </div>
+                    <div class="add-text">150 zł cena od 1os. za 1 dobę</div>
+                </div>
+            </div>
+            <div class="room">
+                <img src="./images/photos/rooms_2.png" alt="hotel room" class="room-img room-img-1">
+                <div class="room-desc">
+                    <h3 class="room-name">Pokój <span class="name-text">DELUXE</span></h3>
+                    <p class="basic-text">
+                        Idealny dla osób, które pragną większego komfortu i większej przestrzeni.
+                        Pokoje Deluxe oprócz podstawowych udogodnień i większych przestrzeni,
+                        posiadają własne balkony i... niesamowity widok na morze!
+                    </p>
+                    <div class="room-icons">
+                        <img src="./images/icons/men.svg" alt="number of people" class="room-icon">
+                        <img src="./images/icons/tv.svg" alt="tv" class="room-icon">
+                        <img src="./images/icons/wifi.svg" alt="wifi" class="room-icon">
+                    </div>
+                    <div class="add-text">250 zł cena od 1os. za 1 dobę</div>
+                </div>
+            </div>
+            <div class="room">
+                <img src="./images/photos/rooms_3.png" alt="hotel room" class="room-img room-img-1">
+                <div class="room-desc">
+                    <h3 class="room-name">Pokój <span class="name-text">PREMIUM</span></h3>
+                    <p class="basic-text">
+                        Pokoje Premium znajdują się na dwóch najwyższych piętrach, skąd widać
+                        morze, plażę i najbliższą okolicę. Są to największe oferowane przez nas
+                        pokoje, ponieważ oprócz sypialni, mają również salon z dodatkową kanapą!
+                    </p>
+                    <div class="room-icons">
+                        <img src="./images/icons/men.svg" alt="number of people" class="room-icon">
+                        <img src="./images/icons/tv.svg" alt="tv" class="room-icon">
+                        <img src="./images/icons/wifi.svg" alt="wifi" class="room-icon">
+                    </div>
+                    <div class="add-text">500 zł cena od 1os. za 1 dobę</div>
+                </div>
+            </div>
+            <button class="main-button">Zobacz więcej</button>
+        </section>
+        <section class="restauration">
+            <div class="section-title-container">
+                <h2 class="section-title">RESTAURACJE</h2>
+                <div class="title-stars">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                </div>
+            </div>
 
+            <p class="distinct-text intro-text">
+                    W naszym hotelu, znajdą Państwo 3 restauracje: Restaurację Wenecką serwującą
+                     najlepsze włoskie dania; Restaurację Egzotyczną, w której największą popularność 
+                     zyskują owoce morza; I oczywiście Tradycyjna Polska Kuchnia.
+            </p>
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/index.min.js"></script>
 
 </body>

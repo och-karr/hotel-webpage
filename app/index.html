@@ -24,8 +24,7 @@
                     <img src="./images/icons/star.svg" alt="hotel rating star" class="logo-star">
                 </div>
                 <div class="logo-main">
-                    <img src="./images/icons/Inteligentny_obiekt_wektorowy@2x.png" alt="hotel logo"
-                        class="logo-main-img">
+                    <img src="./images/icons/title.png" alt="hotel logo" class="logo-main-img">
                 </div>
             </div>
             <ul class="nav-list nav-list-1">
@@ -48,8 +47,8 @@
             <form action="" class="header-form">
                 <h4 class="header-title">Zarezerwuj swój pobyt</h4>
                 <div class="form-group">
-                    <input type="date" class="form-input form-date">
-                    <input type="date" class="form-input form-date">
+                    <input id="start-date" type="date" class="form-input form-date">
+                    <input id="end-date" type="date" class="form-input form-date">
                 </div>
                 <div class="form-group">
                     <select class="form-input form-select">
@@ -66,7 +65,7 @@
                     </select>
                 </div>
                 <button class="form-submit main-button" type="submit">
-                    <img src="./images/icons/bell.png" alt="bell icon" class="submit-bell">
+                    <img src="./images/icons/bell.png" alt="bell icon" id="submit-btn" class="submit-bell">
                     Sprawdź</br> dostępność
                 </button>
             </form>
@@ -75,25 +74,42 @@
 
     <main class="main">
         <section class="about">
-
+            <div class="section-title-container">
+                <h2 class="section-title">NASZ <br class="section-title-space" />HOTEL</h2>
+                <div class="title-stars">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                </div>
+            </div>
+            <p class="distinct-text intro-text">
+                Sprawdź unikalną ofertę naszych pokoi. Posiadamy 120 pokoi, w tym 30 klasy
+                <span class="fat-text">PREMIUM</span> o najwyższym standardzie, 40 pokoi
+                <span class="fat-text">DELUXE</span> oraz dodatkowo 50 pokoi
+                w klasie <span class="fat-text">STANDARD</span>. Zapraszamy do
+                zapoznania się ze szczegółowym opisem.
+            </p>
         </section>
         <section class="rooms">
-            <h2 class="rooms-title">NASZE <br class="rooms-title-space" />POKOJE</h2>
-            <div class="title-stars">
-                <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
-                <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
-                <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
-                <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+            <div class="section-title-container">
+                <h2 class="section-title">NASZE <br class="section-title-space" />POKOJE</h2>
+                <div class="title-stars">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                </div>
             </div>
-            <p class="distinct-text text-1">
+            <p class="distinct-text intro-text">
                 Sprawdź unikalną ofertę naszych pokoi. Posiadamy 120 pokoi, w tym 30 klasy
-                <span class="fattest-text">PREMIUM</span> o najwyższym standardzie, 40 pokoi
-                <span class="fattest-text">DELUXE</span> oraz dodatkowo 50 pokoi
-                w klasie <span class="fattest-text">STANDARD</span>. Zapraszamy do
+                <span class="fat-text">PREMIUM</span> o najwyższym standardzie, 40 pokoi
+                <span class="fat-text">DELUXE</span> oraz dodatkowo 50 pokoi
+                w klasie <span class="fat-text">STANDARD</span>. Zapraszamy do
                 zapoznania się ze szczegółowym opisem.
             </p>
             <div class="room">
-                <img src="./images/photos/rooms_1.png" alt="hotel room" class="room-img room-img-1">
+                <img src="./images/photos/rooms_1.png" alt="hotel room" class="room-img">
                 <div class="room-desc">
                     <h3 class="room-name">Pokój <span class="name-text">STANDARD</span></h3>
                     <p class="basic-text">
@@ -145,9 +161,27 @@
             </div>
             <button class="main-button">Zobacz więcej</button>
         </section>
+        <section class="restauration">
+            <div class="section-title-container">
+                <h2 class="section-title">RESTAURACJE</h2>
+                <div class="title-stars">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                    <img src="./images/icons/star.svg" alt="hotel rating star" class="title-star">
+                </div>
+            </div>
+
+            <p class="distinct-text intro-text">
+                    W naszym hotelu, znajdą Państwo 3 restauracje: Restaurację Wenecką serwującą
+                     najlepsze włoskie dania; Restaurację Egzotyczną, w której największą popularność 
+                     zyskują owoce morza; I oczywiście Tradycyjna Polska Kuchnia.
+            </p>
+        </section>
     </main>
 
-    <!-- <script src="./js/index.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/index.min.js"></script>
 
 </body>
 
