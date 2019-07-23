@@ -292,7 +292,7 @@ h4 {
         .header-container .main-button {
           margin: 20px 0; } }
     .header-container .header-form {
-      padding: 0 57px 30px 57px;
+      padding: 0 57px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -311,7 +311,9 @@ h4 {
             width: 50%; } }
         @media all and (max-width: 575px) {
           .header-container .header-form .form-group {
-            width: 100%; } }
+            width: calc(50% - 10px); }
+            .header-container .header-form .form-group:first-of-type {
+              margin-right: 5px; } }
         .header-container .header-form .form-group .form-input {
           margin-right: 23px; }
           .header-container .header-form .form-group .form-input:first-of-type {
@@ -321,7 +323,8 @@ h4 {
               margin-right: 0; } }
       .header-container .header-form .form-submit {
         margin: auto;
-        margin-bottom: 20px; }
+        margin-top: 0;
+        margin-bottom: 43px; }
         .header-container .header-form .form-submit .submit-bell {
           height: 33px;
           margin: auto;
